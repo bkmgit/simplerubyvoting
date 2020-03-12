@@ -1,0 +1,100 @@
+<h1>Piga Kura! (vote)</h1>
+<%= form_with scope: :vote, url: votes_path, local: true do |form| %>
+
+    <p><%= form.label :Full_name %></p>
+    <p><%= form.text_area :Full_name %></p>
+
+    <table>
+    <tr>
+      <td colspan="5"><% form.label :Ruby_African_Network %><b>Ruby African Network</b></td>
+    </tr>
+    <tr>
+     <td><%= form.radio_button(:Ruby_African_Network, "Hate") %></td>
+     <td><%= form.radio_button(:Ruby_African_Network, "Dislike") %></td>
+     <td><%= form.radio_button(:Ruby_African_Network, "Neutral") %></td>
+     <td><%= form.radio_button(:Ruby_African_Network, "Like") %></td>
+     <td><%= form.radio_button(:Ruby_African_Network, "Love") %></td>
+    </tr>
+    <tr>
+     <td style="width:100px"><%= label_tag(:Ruby_African_Network_Hate, "Hate") %></td>
+     <td style="width:100px"><%= label_tag(:Ruby_African_Network_Dislike, "Dislike") %></td>
+     <td style="width:100px"><%= label_tag(:Ruby_African_Network_Neutral, "Neutral") %></td>
+     <td style="width:100px"><%= label_tag(:Ruby_African_Network_Like, "Like") %></td>
+     <td style="width:100px"><%= label_tag(:Ruby_African_Network_Love, "Love") %></td>
+    </tr>
+
+    <tr><td colspan="5"><% form.label :African_Ruby_Community,"" %><b>African Ruby Community</b></td></tr>
+    <tr>
+     <td><%= form.radio_button(:African_Ruby_Community, "Hate") %></td>
+     <td><%= form.radio_button(:African_Ruby_Community, "Dislike") %></td>
+     <td><%= form.radio_button(:African_Ruby_Community, "Neutral") %></td>
+     <td><%= form.radio_button(:African_Ruby_Community, "Like") %></td>
+     <td><%= form.radio_button(:African_Ruby_Community, "Love") %></td>
+    </tr>
+    <tr>
+     <td style="width:100px"><%= label_tag(:African_Ruby_Community_Hate, "Hate") %></td>
+     <td style="width:100px"><%= label_tag(:African_Ruby_Community_Dislike, "Dislike") %></td>
+     <td style="width:100px"><%= label_tag(:African_Ruby_Community_Neutral, "Neutral") %></td>
+     <td style="width:100px"><%= label_tag(:African_Ruby_Community_Like, "Like") %></td>
+     <td style="width:100px"><%= label_tag(:African_Ruby_Community_Love, "Love") %></td>
+    </tr>
+
+    <tr><td colspan="5"><% form.label :Ruby_African_Community,"" %><b>Ruby African Community</b></td></tr>
+    <tr>
+     <td><%= form.radio_button(:Ruby_African_Community, "Hate") %></td>
+     <td><%= form.radio_button(:Ruby_African_Community, "Dislike") %></td>
+     <td><%= form.radio_button(:Ruby_African_Community, "Neutral") %></td>
+     <td><%= form.radio_button(:Ruby_African_Community, "Like") %></td>
+     <td><%= form.radio_button(:Ruby_African_Community, "Love") %></td>
+    </tr>
+    <tr>
+     <td style="width:100px"><%= label_tag(:Ruby_African_Community_Hate, "Hate") %></td>
+     <td style="width:100px"><%= label_tag(:Ruby_African_Community_Dislike, "Dislike") %></td>
+     <td style="width:100px"><%= label_tag(:Ruby_African_Community_Neutral, "Neutral") %></td>
+     <td style="width:100px"><%= label_tag(:Ruby_African_Community_Like, "Like") %></td>
+     <td style="width:100px"><%= label_tag(:Ruby_African_Community_Love, "Love") %></td>
+    </tr>
+
+    <tr><td colspan="5"><% form.label :African_Ruby_Association,"" %><b>African Ruby Association</b></td></tr>
+    <tr>
+     <td><%= form.radio_button(:African_Ruby_Association, "Hate") %></td>
+     <td><%= form.radio_button(:African_Ruby_Association, "Dislike") %></td>
+     <td><%= form.radio_button(:African_Ruby_Association, "Neutral") %></td>
+     <td><%= form.radio_button(:African_Ruby_Association, "Like") %></td>
+     <td><%= form.radio_button(:African_Ruby_Association, "Love") %></td>
+    </tr>
+    <tr>
+     <td style="width:100px"><%= label_tag(:African_Ruby_Association_Hate, "Hate") %></td>
+     <td style="width:100px"><%= label_tag(:African_Ruby_Association_Dislike, "Dislike") %></td>
+     <td style="width:100px"><%= label_tag(:African_Ruby_Association_Neutral, "Neutral") %></td>
+     <td style="width:100px"><%= label_tag(:African_Ruby_Association_Like, "Like") %></td>
+     <td style="width:100px"><%= label_tag(:African_Ruby_Association_Love, "Love") %></td>
+    </tr>
+
+    <tr><td colspan="5"><% form.label :Nairuby,"" %><b>Nairuby</b></td></tr>
+    <tr>
+     <td><%= form.radio_button(:Nairuby, "Hate") %></td>
+     <td><%= form.radio_button(:Nairuby, "Dislike") %></td>
+     <td><%= form.radio_button(:Nairuby, "Neutral") %></td>
+     <td><%= form.radio_button(:Nairuby, "Like") %></td>
+     <td><%= form.radio_button(:Nairuby, "Love") %></td>
+    </tr>
+    <tr>
+     <td style="width:100px"><%= label_tag(:Nairuby_Hate, "Hate") %></td>
+     <td style="width:100px"><%= label_tag(:Nairuby_Dislike, "Dislike") %></td>
+     <td style="width:100px"><%= label_tag(:Nairuby_Neutral, "Neutral") %></td>
+     <td style="width:100px"><%= label_tag(:Nairuby_Like, "Like") %></td>
+     <td style="width:100px"><%= label_tag(:Nairuby_Love, "Love") %></td>
+    </tr>
+    </table>
+     <p><b>Optional</b><p>
+     <p><%= form.label :Your_suggestion %></p>
+     <p><%= form.text_area :Suggestion %></p>
+    
+   <p>
+    <%= form.submit %>
+   </p>
+<% end %>
+
+
+

@@ -1,0 +1,24 @@
+<h1>Kura zimepigwa (Listing votes)</h1>
+
+<table border="1">
+ <tr>
+  <th>Full Name</th>
+  <th>Ruby African Network</th>
+  <th>African Ruby Community</th>
+  <th>Ruby African Community</th>
+  <th>African Ruby Association</th>
+  <th>Nairuby</th>
+  <th>Suggestion</th>
+ </tr>
+ <% @votes.each do |vote| %>
+  <tr>
+   <td><%= vote.Full_name %></td>
+   <td><%= vote.Ruby_African_Network %></td>
+   <td><%= vote.African_Ruby_Community %></td>
+   <td><%= vote.Ruby_African_Community %></td>
+   <td><%= vote.African_Ruby_Association %></td>
+   <td><%= vote.Nairuby %></td>
+   <td><%= vote.Suggestion %></td>
+  </tr>
+ <% end %>
+</table>
